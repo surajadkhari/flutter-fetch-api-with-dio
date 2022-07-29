@@ -1,7 +1,7 @@
 import 'package:dio/dio.dart';
 import 'package:flutter_fetch_api_with_dio/model/post_model.dart';
 
-class ApiService {
+class DioClient {
   final String endpoint = "https://jsonplaceholder.typicode.com/";
   final String path = "posts";
   Future<List<PostModel>> getPost() async {
