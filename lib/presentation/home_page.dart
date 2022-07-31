@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_fetch_api_with_dio/model/user_model.dart';
+import 'package:shimmer/shimmer.dart';
 import '../core/user_repository.dart';
 
 class HomePage extends StatelessWidget {
@@ -27,7 +28,23 @@ class HomePage extends StatelessWidget {
                   );
                 });
           } else {
-            return const Center(child: CircularProgressIndicator());
+            return Shimmer.fromColors(
+                baseColor: Colors.grey[400]!,
+                highlightColor: Colors.grey[300]!,
+                child: ListView.builder(
+                  shrinkWrap: true,
+                  itemCount: 5,
+                  itemBuilder: (context, index) => Container(
+                    margin: const EdgeInsets.symmetric(
+                        vertical: 10, horizontal: 10),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      color: Colors.white,
+                    ),
+                    height: 100,
+                    width: 200,
+                  ),
+                ));
           }
         },
       ),
