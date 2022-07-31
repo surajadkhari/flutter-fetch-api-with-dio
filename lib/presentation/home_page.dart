@@ -9,11 +9,21 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("data")),
-      body: FutureBuilder<List<PostModel>>(
+      appBar: AppBar(title: const Text("Fetch API with Dio")),
+      body: FutureBuilder<List<UserModel>>(
         builder: (context, snapshot) {
           if (snapshot.hasData) {
-            return Text(snapshot.data![1].body);
+            return ListView.builder(
+                itemCount: snapshot.data!.length,
+                itemBuilder: (context, index) {
+                  final value = snapshot.data![index];
+
+                  return ListTile(
+                    leading: Image.network(value.avatar),
+                    title: Text(value.firstname + value.lastname),
+                    subtitle: Text(value.firstname),
+                  );
+                });
           } else {
             return const CircularProgressIndicator();
           }

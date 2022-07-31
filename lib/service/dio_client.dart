@@ -7,7 +7,7 @@ class DioClient {
   Future<List<UserModel>> getPost() async {
     try {
       final response = await Dio(BaseOptions(baseUrl: endpoint)).get(path);
-      final List data = response.data;
+      final List data = response.data["data"];
       return data.map((e) => UserModel.fromJson(e)).toList();
     } catch (e) {
       throw Exception(e);
