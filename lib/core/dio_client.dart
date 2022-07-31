@@ -1,19 +1,13 @@
 import 'package:dio/dio.dart';
-import 'package:flutter_fetch_api_with_dio/model/user_model.dart';
 import 'package:flutter_fetch_api_with_dio/utlis/const.dart';
-
-class DioClient {
-  Future<List<UserModel>> getUser() async {
+class ApiClient {
+  Future getData(String path) async {
     try {
-      final response = await Dio(
-        BaseOptions(
-          baseUrl: ApiConst.endpoint,
-        ),
-      ).get(ApiConst.path);
-      final List data = response.data["data"];
-      return data.map((e) => UserModel.fromJson(e)).toList();
-    } catch (e) {
-      throw Exception(e);
+      final resonse =
+          await Dio(BaseOptions(baseUrl: ApiConst.baseUrl)).get(path);
+      return resonse.data;
+    } on DioError catch (e) {
+      throw Exception(e.message);
     }
   }
 }
