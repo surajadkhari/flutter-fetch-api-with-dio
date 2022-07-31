@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import 'package:flutter_fetch_api_with_dio/model/post_model.dart';
+import 'package:flutter_fetch_api_with_dio/model/user_model.dart';
 
 class DioClient {
   final String endpoint = "https://jsonplaceholder.typicode.com/";

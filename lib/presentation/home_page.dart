@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_fetch_api_with_dio/model/post_model.dart';
+import 'package:flutter_fetch_api_with_dio/model/user_model.dart';
 
 import '../service/dio_client.dart';
 
