@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_fetch_api_with_dio/model/user_model.dart';
-
-import '../service/dio_client.dart';
+import '../core/dio_client.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -28,7 +27,7 @@ class HomePage extends StatelessWidget {
             return const CircularProgressIndicator();
           }
         },
-        future: DioClient().getPost(),
+        future: DioClient().getUser(),
       ),
     );
   }
