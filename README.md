@@ -1,7 +1,7 @@
 # flutter_fetch_api_with_dio
 
 ---
-![fetch-api-with-dio](https://user-images.githubusercontent.com/48079501/182287900-792c41d3-b694-47ee-92d4-84599a1986a4.jpg)
+![fetch-api-with-dio](https://user-images.githubusercontent.com/48079501/182289177-641c20c1-8596-41df-82f0-a46a18984a08.jpg)
 
 Flutter fetch API with Dio Package
 Dio is a powerful Http client, which supports Interceptors,
@@ -13,7 +13,8 @@ Timeout etc.
 Check Out Example to Fetch API with Dio Package
 Pagination is ignored: I will cover it in next article
 API:https://reqres.in/api/users?page
-![Uploading api.png…]()
+![api](https://user-images.githubusercontent.com/48079501/182289276-7a9db086-b5d5-4e76-b608-65e172eddead.png)
+
 
 #1. Add Dio package
 Run this command:
