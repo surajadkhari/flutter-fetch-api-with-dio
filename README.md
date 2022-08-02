@@ -73,5 +73,5 @@ Enhance loading with Shimmer Effect:
 ![shimmer](https://user-images.githubusercontent.com/48079501/182289010-aae1f434-3071-4ffc-9ff4-876c7b6123f0.jpeg)
 
 I hope this exposition hopefully demystified the use of Dio(Get method) to fetch API.
-Thanks for reading and see you in the next one.
+Thanks for reading and see you in the next one..
 
