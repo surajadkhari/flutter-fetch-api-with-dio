@@ -67,11 +67,11 @@ This helps to easily track error and reuse.
 
 ---
 
-Enhance loading with Shimmer Effect:
+#Enhance loading with Shimmer Effect:
 -Replace CircularProcessIndicator with Shimmer.fromColors()
 ![shimmer](https://user-images.githubusercontent.com/48079501/182288990-be43432a-205e-491d-bddf-b0df1210f5ae.png)
 ![shimmer](https://user-images.githubusercontent.com/48079501/182289010-aae1f434-3071-4ffc-9ff4-876c7b6123f0.jpeg)
 
 I hope this exposition hopefully demystified the use of Dio(Get method) to fetch API.
-Thanks for reading and see you in the next one..
+Thanks for reading and see you in the next one.
 
