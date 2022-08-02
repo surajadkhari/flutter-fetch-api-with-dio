@@ -74,6 +74,4 @@ Enhance loading with Shimmer Effect:
 
 I hope this exposition hopefully demystified the use of Dio(Get method) to fetch API.
 Thanks for reading and see you in the next one.
-GitHub repo: https://github.com/surajadkhari/flutter-fetch-api-with-dio.git
-Fetch API with htpp package (Get method):
-surajadkhari/flutter-fetch-api-with-https: Using Future Builder with http package to call API (github.com)
+
